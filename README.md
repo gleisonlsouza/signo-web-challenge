@@ -6,7 +6,7 @@
 ### Sobre o sistema
 Sistema de votação desenvolvido para o desafio para uma vaga de DEV na empresa Signo Web, o sistema conta com um backend desenvolvido em Node/express utilizando o banco de dados MySql com sequelize. O frontend foi desenvolvido com ReactJS com redux e react-router-dom. 
 
-A votação pode ser feita sem ter um usuário cadastrado, porém para criar as suas próprias enquetes é preciso ter uma conta e estar logado. O sistema conta com um CRUD completo e o resultado da enquete é atualizado em tempo real a cada votação. O sistema de login conta com autenticação utlizando o JsonWebToken.
+A votação pode ser feita sem ter um usuário cadastrado, porém para criar as suas próprias enquetes é preciso ter uma conta e estar logado. O sistema conta com um CRUD completo e o resultado da enquete é atualizado em tempo real a cada votação. O sistema de login conta com autenticação utilizando o JsonWebToken.
 
 ## Veja algumas imagens abaixo e em seguida o  tutorial de instalação
 <br>
