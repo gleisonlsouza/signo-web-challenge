@@ -1,0 +1,277 @@
+.container{
+    min-height: calc(100vh - 5rem);
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;    
+    padding: 1em;
+}
+
+.mainTitle{
+    display: flex;
+    justify-content: space-between;
+    background-color: #182C61;
+    padding: 2em;
+    border-radius: 1em 1em 0 0;
+    font-size: 1em;
+    color: #fff;
+
+    .voteButton{
+        border-radius: 15px;
+        border: none;
+        outline: none;        
+        padding: 1em;
+        min-width: 200px;
+        font-weight: bold;
+        cursor: pointer;        
+        transition: all ease-in-out 300ms;
+
+
+        &:hover{
+            background-color: #3B3B98;
+            color:#FFC312;
+        }
+    }
+    
+}
+
+
+.pollinfo{
+    width: 100%;
+    text-align: right; 
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.voteContent{
+    display: flex;
+    flex-direction: column;
+    background-color: #3B3B98;    
+    padding: 2em 2em 0.5em 2em;
+    min-height: 10em;
+    border-radius: 0 0 1em 1em;
+    color: #fff;
+    font-size: 1.3em;
+
+    .description{
+        margin-left: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    div{        
+        margin: 0 .5em 0 .5em;
+
+        &.title{
+            text-align: center;
+            background-color: #0984e3;
+            border-radius: 1em 1em 0 0;
+            padding: 0.5em;
+            
+            h3{                
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }        
+
+        &.description{
+            background-color: #182C61;
+            padding: 0.5em;
+            min-height: 6em;
+            p{                
+                
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+    .status{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        background-color: #0984e3;
+
+        ul{
+            li{
+                display: flex;
+                div{
+                    width: 50%;
+                    padding: 0.5em 0 0 .5em;
+                    margin-bottom: 0.1em;
+                }                                
+            }
+        }
+    }
+
+    .buttons{ 
+        display: flex;      
+        padding: 0.5em;
+        min-height: 5em;
+        background-color: #58B19F;
+        border-radius: 0 0 .5em .5em;
+        text-align: center;
+        margin-bottom: 1em;
+
+        .btn{
+            display: flex;            
+            justify-content: space-between;
+            width: 100%;
+            button{
+                border: none;
+                outline: none;
+                background: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin:1em;
+                color:#182C61;
+                svg{
+                    width: 5em;
+                    height: 3em;
+                }
+                
+    
+                &:hover{    
+                    background-color: #182C61;
+                    color: #FFC312;
+                }
+    
+            }
+
+        }
+        
+
+        .buttonsConfirm{
+            display: flex; 
+            width: 100%;            
+            transition: ease-in-out 300ms;   
+            
+            button{
+                border: none;
+                width: 50%;
+                outline: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin:1em;
+                color:#182C61;
+    
+                &:hover{    
+                    background-color: #182C61;
+                    color: #FFC312;
+                }
+    
+            }
+
+            .btnConfirm{
+                background-color: #dc3546;
+                font-size: 1em;
+                color: #fff;
+            }
+
+            .btnCancel{
+                background-color: #198754;
+                font-size: 1em;
+                color: #fff;
+            }
+
+        }
+          
+        
+    }
+
+     
+}
+
+.radioButton{
+    display: flex;
+    flex-direction: column;
+
+    .options{
+        display: flex;
+        margin-bottom: 1em;
+        div{
+            min-width: 5em;
+        }
+        label{
+            margin-left: .5em;
+            cursor: pointer;
+            input{
+                margin-right: 1em;
+            }
+        }
+    }
+
+    
+}
+
+.emptyPolls{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+
+    a{
+        text-decoration: none;
+        color: #FFC312;
+    }
+
+    p{
+        margin-top: 1em;
+    }
+}
+
+
+@media (max-width: 1300px){
+    .futureContent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .pollContent{
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .mainDescription{
+        font-size: 1em;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1000px){
+    .mainTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        text-align: center; 
+        padding: 1em;   
+        button{
+            margin-top: 1em;            
+        }       
+    }
+
+    .mainContent{
+        padding: 1em;
+    }
+    .futureContent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+        font-size: 1em;
+        
+
+        .pollContent{
+            margin-top: 1em;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .mainTitle{
+        font-size: 1em;
+    }
+
+}
