@@ -19,6 +19,8 @@ const Login = () => {
   
     const { error,message, loading } = useSelector((state) => state.auth)
 
+   
+   //Function to login an user
     const handleSubmit = async (e) => {
         e.preventDefault()
   
